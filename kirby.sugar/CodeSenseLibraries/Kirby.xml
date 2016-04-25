@@ -78,7 +78,7 @@
       <completion string="isSquare" />
       <completion string="isWritable" />
       <completion string="kirby" />
-      <completion string="load" />)
+      <completion string="load" />
       <completion string="meta" />
       <completion string="mime" />
       <completion string="modified" />
@@ -148,7 +148,7 @@
       <completion string="content" />
       <completion string="content" />
       <completion string="contentURL" />
-      <completion string="create" />)
+      <completion string="create" />
       <completion string="date" />
       <completion string="delete" />
       <completion string="depth" />
@@ -217,7 +217,7 @@
       <completion string="prevVisible" />
       <completion string="reset" />
       <completion string="root" />
-      <completion string="search" />)
+      <completion string="search" />
       <completion string="siblings" />
       <completion string="site" />
       <completion string="slug" />
@@ -244,7 +244,7 @@
       <completion string="append" />
       <completion string="children" />
       <completion string="count" />
-      <completion string="create" />)
+      <completion string="create" />
       <completion string="current" />
       <completion string="files" />
       <completion string="filter" />
@@ -273,13 +273,13 @@
       <completion string="not" />
       <completion string="nth" />
       <completion string="offset" />
-      <completion string="paginate" />)
+      <completion string="paginate" />
       <completion string="pagination" />
       <completion string="pluck" />
       <completion string="prepend" />
       <completion string="prev" />
       <completion string="rewind" />
-      <completion string="search" />)
+      <completion string="search" />
       <completion string="set" />
       <completion string="shuffle" />
       <completion string="slice" />
