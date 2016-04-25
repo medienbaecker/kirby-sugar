@@ -9,55 +9,186 @@
         <append-static>()</append-static>
     </behavior>
     
-    <set name="com.medienbaecker.kirby.field">
-      <completion string="bool" />
-      <completion string="empty" />
-      <completion string="escape" />
-      <completion string="excerpt" />
+    <set name="com.medienbaecker.kirby.camera">
+      <completion string="make" />
+      <completion string="model" />
+      <completion string="toArray" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.content">
+      <completion string="data" />
       <completion string="exists" />
-      <completion string="float" />
-      <completion string="html" />
-      <completion string="int" />        
-      <completion string="isEmpty" />
-      <completion string="isFalse" />
-      <completion string="isNotEmpty" />
-      <completion string="isTrue" />
-      <completion string="key" />
-      <completion string="kirbytext" />
-      <completion string="kt" />
-      <completion string="length" />
-      <completion string="link" />
-      <completion string="lower" />
-      <completion string="markdown" />
-      <completion string="or" />
-      <completion string="pages" />
-      <completion string="short" />
-      <completion string="split" />
-      <completion string="toFile" />
-      <completion string="toPage" />
-      <completion string="toStructure" />
-      <completion string="toURL" />
-      <completion string="upper" />
-      <completion string="value" />
-      <completion string="widont" />
-      <completion string="words" />
-      <completion string="xml" />
-      <completion string="yaml" />
+      <completion string="fields" />
+      <completion string="get">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="has">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="language" />
+      <completion string="name" />
+      <completion string="raw" />
+      <completion string="root" />
+      <completion string="toArray" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.dimension">
+      <completion string="fit" />
+      <completion string="fitHeight" />
+      <completion string="fitWidth" />
+      <completion string="fitWidthAndHeight" />
+      <completion string="height" />
+      <completion string="landscape" />
+      <completion string="orientation" />
+      <completion string="portrait" />
+      <completion string="ratio" />
+      <completion string="square" />
+      <completion string="width" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.exif">
+      <completion string="aperture" />
+      <completion string="camera" />
+      <completion string="data" />
+      <completion string="exposure" />
+      <completion string="focalLength" />
+      <completion string="isBW" />
+      <completion string="isColor" />
+      <completion string="iso" />
+      <completion string="location" />
+      <completion string="timestamp" />
+      <completion string="toArray" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.field">
+		  <completion string="bool" />
+		  <completion string="empty" />
+		  <completion string="escape" />
+		  <completion string="excerpt">
+		    <behavior>
+		    	<append-dynamic>
+		    	    <matched-suffix>(\()|[^(]</matched-suffix>
+		    		<transform-into>(?1::(${1:}\))</transform-into>
+		    	</append-dynamic>
+		    </behavior>
+		  </completion>
+		  <completion string="exists" />
+		  <completion string="float" />
+		  <completion string="html" />
+		  <completion string="int" />        
+		  <completion string="isEmpty" />
+		  <completion string="isFalse" />
+		  <completion string="isNotEmpty" />
+		  <completion string="isTrue" />
+		  <completion string="key" />
+		  <completion string="kirbytext" />
+		  <completion string="kt" />
+		  <completion string="length" />
+		  <completion string="link" />
+		  <completion string="lower" />
+		  <completion string="markdown" />
+		  <completion string="or">
+		    <behavior>
+		    	<append-dynamic>
+		    	    <matched-suffix>(\()|[^(]</matched-suffix>
+		    		<transform-into>(?1::(${1:}\))</transform-into>
+		    	</append-dynamic>
+		    </behavior>
+		  </completion>
+		  <completion string="pages" />
+		  <completion string="short">
+		    <behavior>
+		    	<append-dynamic>
+		    	    <matched-suffix>(\()|[^(]</matched-suffix>
+		    		<transform-into>(?1::(${1:}\))</transform-into>
+		    	</append-dynamic>
+		    </behavior>
+		  </completion>
+		  <completion string="split">
+  		  <behavior>
+  		  	<append-dynamic>
+  		  	    <matched-suffix>(\()|[^(]</matched-suffix>
+  		  		<transform-into>(?1::(${1:}\))</transform-into>
+  		  	</append-dynamic>
+  		  </behavior>
+  		</completion>
+		  <completion string="toFile" />
+		  <completion string="toPage" />
+		  <completion string="toStructure" />
+		  <completion string="toURL" />
+		  <completion string="upper" />
+		  <completion string="value" />
+		  <completion string="widont" />
+		  <completion string="words" />
+		  <completion string="xml" />
+		  <completion string="yaml" />
     </set>
     
     <set name="com.medienbaecker.kirby.file">
-      <completion string="append" />
+      <completion string="append">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="base64" />
-      <completion string="content" />
-      <completion string="copy" />
-      <completion string="createNewFilename" />
-      <completion string="crop" />
+      <completion string="content">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="copy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="createNewFilename">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="crop">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="dataUri" />
       <completion string="date" />
       <completion string="delete" />
       <completion string="dimensions" />
       <completion string="dir" />
-      <completion string="download" />
+      <completion string="download">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="exif" />
       <completion string="exists" />
       <completion string="extension" />
@@ -66,9 +197,23 @@
       <completion string="hasNext" />
       <completion string="hasPrev" />
       <completion string="hash" />
-      <completion string="header" />
+      <completion string="header">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="height" />
-      <completion string="html" />
+      <completion string="html">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="imagesize" />        
       <completion string="is" />
       <completion string="isExecutable" />
@@ -78,11 +223,32 @@
       <completion string="isSquare" />
       <completion string="isWritable" />
       <completion string="kirby" />
-      <completion string="load" />
-      <completion string="meta" />
+      <completion string="load">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="meta">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="mime" />
       <completion string="modified" />
-      <completion string="move" />
+      <completion string="move">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="name" />
       <completion string="next" />
       <completion string="niceSize" />
@@ -90,14 +256,42 @@
       <completion string="page" />
       <completion string="prev" />
       <completion string="ratio" />
-      <completion string="read" />
+      <completion string="read">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="remove" />
-      <completion string="rename" />
+      <completion string="rename">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="reset" />
-      <completion string="resize" />
+      <completion string="resize">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="root" />
       <completion string="safeName" />
-      <completion string="save" />
+      <completion string="save">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="show" />
       <completion string="siblings" />
       <completion string="site" />
@@ -107,37 +301,164 @@
       <completion string="toJson" />
       <completion string="touch" />
       <completion string="type" />
-      <completion string="update" />
+      <completion string="update">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="url" />
       <completion string="width" />
-      <completion string="write" />
+      <completion string="write">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
     </set>
     
     <set name="com.medienbaecker.kirby.files">
       <completion string="count" />
-      <completion string="filter" />
-      <completion string="filterBy" />
-      <completion string="find" />
-      <completion string="findBy" />
+      <completion string="filter">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="filterBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="find">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="findBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="first" />
       <completion string="flip" />
-      <completion string="get" />
-      <completion string="groupBy" />
+      <completion string="get">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="groupBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="keys" />
       <completion string="last" />
-      <completion string="limit" />
+      <completion string="limit">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="map" />
-      <completion string="not" />
-      <completion string="nth" />
-      <completion string="offset" />
-      <completion string="paginate" />
+      <completion string="not">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="nth">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="offset">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="paginate">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="pagination" />
-      <completion string="pluck" />
+      <completion string="pluck">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="shuffle" />
-      <completion string="slice" />        
-      <completion string="sortBy" />
+      <completion string="slice">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="sortBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="toArray" />
       <completion string="toJson" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.language">
+      <completion string="code" />
+      <completion string="default" />
+      <completion string="direction" />
+      <completion string="locale" />
+      <completion string="name" />
+      <completion string="url" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.location">
+      <completion string="lat" />
+      <completion string="lng" />
+      <completion string="toArray" />
     </set>
     
     <set name="com.medienbaecker.kirby.page">
@@ -148,14 +469,28 @@
       <completion string="content" />
       <completion string="content" />
       <completion string="contentURL" />
-      <completion string="create" />
+      <completion string="create">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="date" />
       <completion string="delete" />
       <completion string="depth" />
       <completion string="dirname" />
       <completion string="diruri" />
       <completion string="documents" />
-      <completion string="equals" />
+      <completion string="equals">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="file" />
       <completion string="files" />
       <completion string="find" />
@@ -181,31 +516,80 @@
       <completion string="headers" />
       <completion string="hide" />
       <completion string="id" />
-      <completion string="image" />
+      <completion string="image">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="images" />
       <completion string="index" />
       <completion string="intendedTemplate" />
       <completion string="intendedTemplateFile" />
       <completion string="inventory" />
-      <completion string="is" />
+      <completion string="is">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="isActive" />
-      <completion string="isAncestorOf" />
+      <completion string="isAncestorOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="isCacheable" />
-      <completion string="isChildOf" />
+      <completion string="isChildOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="isDeletable" />
-      <completion string="isDescendantOf" />
+      <completion string="isDescendantOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="isDescendantOfActive" />
       <completion string="isErrorPage" />
       <completion string="isHomePage" />
       <completion string="isInvisible" />
       <completion string="isOpen" />
-      <completion string="isParentOf" />
+      <completion string="isParentOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="isSite" />
       <completion string="isVisible" />
       <completion string="isWritable" />
       <completion string="kirby" />
       <completion string="modified" />
-      <completion string="move" />
+      <completion string="move">
+        <behavior>
+		    	<append-dynamic>
+		    	    <matched-suffix>(\()|[^(]</matched-suffix>
+		    		<transform-into>(?1::(${1:}\))</transform-into>
+		    	</append-dynamic>
+		    </behavior>
+      </completion>
       <completion string="next" />
       <completion string="nextInvisible" />
       <completion string="nextVisible" />
@@ -217,11 +601,25 @@
       <completion string="prevVisible" />
       <completion string="reset" />
       <completion string="root" />
-      <completion string="search" />
+      <completion string="search">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="siblings" />
       <completion string="site" />
       <completion string="slug" />
-      <completion string="sort" />
+      <completion string="sort">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="template" />
       <completion string="templateData" />
       <completion string="templateFile" />
@@ -232,7 +630,14 @@
       <completion string="toJson" />
       <completion string="touch" />
       <completion string="uid" />
-      <completion string="update" />
+      <completion string="update">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="uri" />
       <completion string="url" />
       <completion string="urlKey" />
@@ -240,55 +645,633 @@
     </set>
     
     <set name="com.medienbaecker.kirby.pages">
-      <completion string="add" />
-      <completion string="append" />
+      <completion string="add">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="append">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="children" />
       <completion string="count" />
-      <completion string="create" />
+      <completion string="create">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="current" />
       <completion string="files" />
-      <completion string="filter" />
-      <completion string="filterBy" />
-      <completion string="find" />
-      <completion string="findBy" />
-      <completion string="findByURI" />
+      <completion string="filter">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="filterBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="find">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="findBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="findByURI">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="findOpen" />
       <completion string="first" />
       <completion string="flip" />
-      <completion string="get" />
-      <completion string="group" />
-      <completion string="groupBy" />
-      <completion string="has" />
+      <completion string="get">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="group">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="groupBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="has">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="index" />
-      <completion string="indexOf" />
+      <completion string="indexOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="invisible" />
       <completion string="key" />
-      <completion string="keyOf" />
+      <completion string="keyOf">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="keys" />
       <completion string="last" />
-      <completion string="limit" />
+      <completion string="limit">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="map" />
-      <completion string="merge" />
+      <completion string="merge">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="next" />
-      <completion string="not" />
-      <completion string="nth" />
-      <completion string="offset" />
-      <completion string="paginate" />
+      <completion string="not">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="nth">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="offset">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="paginate">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="pagination" />
-      <completion string="pluck" />
-      <completion string="prepend" />
+      <completion string="pluck">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="prepend">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="prev" />
       <completion string="rewind" />
-      <completion string="search" />
-      <completion string="set" />
+      <completion string="search">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="set">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="shuffle" />
-      <completion string="slice" />
-      <completion string="sortBy" />
+      <completion string="slice">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="sortBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
       <completion string="toArray" />
       <completion string="toJson" />
       <completion string="valid" />
       <completion string="visible" />
-      <completion string="without" />
+      <completion string="without">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+    </set>
+    
+    <set name="com.medienbaecker.kirby.pagination">
+      <completion string="firstPage" />
+      <completion string="firstPageUrl" />
+      <completion string="hasNextPage" />
+      <completion string="hasPages" />
+      <completion string="hasPrevPage" />
+      <completion string="isFirstPage" />
+      <completion string="isLastPage" />
+      <completion string="items" />
+      <completion string="lastPage" />
+      <completion string="lastPageUrl" />
+      <completion string="limit" />
+      <completion string="nextPage" />
+      <completion string="nextPageUrl" />
+      <completion string="numEnd" />
+      <completion string="numStart" />
+      <completion string="offset" />
+      <completion string="page" />
+      <completion string="pageUrl">
+        <behavior>
+  	    	<append-dynamic>
+  	    	    <matched-suffix>(\()|[^(]</matched-suffix>
+  	    		<transform-into>(?1::(${1:}\))</transform-into>
+  	    	</append-dynamic>
+  	    </behavior>
+      </completion>
+      <completion string="pages" />
+      <completion string="prevPage" />
+      <completion string="prevPageUrl" />
+      <completion string="range">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="rangeEnd" />
+      <completion string="rangeStart" />
+      <completion string="toArray" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.request">
+      <completion string="ajax" />
+      <completion string="body" />
+      <completion string="cli" />
+      <completion string="data" />
+      <completion string="files" />
+      <completion string="get">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="has">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="ip" />
+      <completion string="is" />
+      <completion string="method" />
+      <completion string="params" />
+      <completion string="path" />
+      <completion string="query" />
+      <completion string="referer" />
+      <completion string="scheme" />
+      <completion string="secure" />
+      <completion string="ssl" />
+      <completion string="url" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.roots">
+      <completion string="accounts" />
+      <completion string="assets" />
+      <completion string="autocss" />
+      <completion string="autojs" />
+      <completion string="avatars" />
+      <completion string="blueprints" />
+      <completion string="cache" />
+      <completion string="config" />
+      <completion string="content" />
+      <completion string="controllers" />
+      <completion string="fields" />
+      <completion string="index" />
+      <completion string="kirby" />
+      <completion string="languages" />
+      <completion string="models" />
+      <completion string="plugins" />
+      <completion string="site" />
+      <completion string="snippets" />
+      <completion string="tags" />
+      <completion string="templates" />
+      <completion string="thumbs" />
+      <completion string="widgets" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.site">
+      <completion string="activePage" />
+      <completion string="archives" />
+      <completion string="audio" />
+      <completion string="breadcrumb" />
+      <completion string="children" />
+      <completion string="code" />
+      <completion string="content" />
+      <completion string="contentURL" />
+      <completion string="defaultLanguage" />
+      <completion string="detectedLanguage" />
+      <completion string="diruri" />
+      <completion string="documents" />
+      <completion string="errorPage" />
+      <completion string="grandChildren" />
+      <completion string="hasArchives" />
+      <completion string="hasAudio" />
+      <completion string="hasChildren" />
+      <completion string="hasCode" />
+      <completion string="hasDocuments" />
+      <completion string="hasFiles" />
+      <completion string="hasImages" />
+      <completion string="hasInvisibleChildren" />
+      <completion string="hasVideos" />
+      <completion string="hasVisibleChildren" />
+      <completion string="homePage" />
+      <completion string="id" />
+      <completion string="images" />
+      <completion string="index" />
+      <completion string="isSite" />
+      <completion string="language">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="languages" />
+      <completion string="locale" />
+      <completion string="modified" />
+      <completion string="multilang" />
+      <completion string="pages" />
+      <completion string="reset" />
+      <completion string="roles" />
+      <completion string="sessionLanguage" />
+      <completion string="switchLanguage">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="update">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="url">
+      <completion string="user" />
+      <completion string="users" />
+      <completion string="videos" />
+      <completion string="visit">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="visitorLanguage" />
+      <completion string="wasModifiedAfter" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.urls">
+      <completion string="assets" />
+      <completion string="autocss" />
+      <completion string="autojs" />
+      <completion string="avatars" />
+      <completion string="content" />
+      <completion string="index" />
+      <completion string="thumbs" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.user">
+      <completion string="avatar" />
+      <completion string="avatarRoot" />
+      <completion string="current" />
+      <completion string="data" />
+      <completion string="delete" />
+      <completion string="email" />
+      <completion string="exists" />
+      <completion string="firstName" />
+      <completion string="gravatar" />
+      <completion string="hasPanelAccess" />
+      <completion string="hasPermission">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="hasRole">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="is">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="isAdmin" />
+      <completion string="isCurrent" />
+      <completion string="lastName" />
+      <completion string="login">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="logout" />
+      <completion string="role" />
+      <completion string="update">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="username" />
+    </set>
+    
+    <set name="com.medienbaecker.kirby.users">
+      <completion string="count" />
+      <completion string="create">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="filter">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="filterBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="find">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="findBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="first" />
+      <completion string="flip" />
+      <completion string="get">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="groupBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="keys" />
+      <completion string="last" />
+      <completion string="limit">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="map">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="not">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="nth">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="offset">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="paginate">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="pagination" />
+      <completion string="pluck">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="shuffle" />
+      <completion string="slice">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="sortBy">
+        <behavior>
+        	<append-dynamic>
+        	    <matched-suffix>(\()|[^(]</matched-suffix>
+        		<transform-into>(?1::(${1:}\))</transform-into>
+        	</append-dynamic>
+        </behavior>
+      </completion>
+      <completion string="toArray" />
+      <completion string="toJson" />
     </set>
     
 </codesense>
