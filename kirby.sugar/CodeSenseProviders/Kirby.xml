@@ -9,11 +9,21 @@
             <complete-match>\b[a-zA-Z]*</complete-match>
             
             <!-- completions use the set names you defined in your libraries -->
+            <completions>com.medienbaecker.kirby.camera</completions>
+            <completions>com.medienbaecker.kirby.content</completions>
+            <completions>com.medienbaecker.kirby.dimensions</completions>
+            <completions>com.medienbaecker.kirby.exif</completions>
             <completions>com.medienbaecker.kirby.field</completions>
             <completions>com.medienbaecker.kirby.file</completions>
             <completions>com.medienbaecker.kirby.files</completions>
+            <completions>com.medienbaecker.kirby.language</completions>
+            <completions>com.medienbaecker.kirby.location</completions>
             <completions>com.medienbaecker.kirby.page</completions>
             <completions>com.medienbaecker.kirby.pages</completions>
+            <completions>com.medienbaecker.kirby.pagination</completions>
+            <completions>com.medienbaecker.kirby.request</completions>
+            <completions>com.medienbaecker.kirby.roots</completions>
+            <completions>com.medienbaecker.kirby.site</completions>
         </provider>
 
 </codesense>
