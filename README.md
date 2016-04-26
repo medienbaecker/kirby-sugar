@@ -6,4 +6,4 @@ Autocomplete containing the [camera](https://getkirby.com/docs/cheatsheet#camera
 
 ## Raw methods
 
-You can find the extracted methods in this [xml file](https://raw.githubusercontent.com/medienbaecker/kirby-sugar/master/kirby.sugar/CodeSenseLibraries/Kirby.xml) if you want to quickly convert it to another editor.
+You can find the extracted methods in this [text file](https://raw.githubusercontent.com/medienbaecker/kirby-sugar/master/methods.txt) if you want to quickly convert it to another editor.
