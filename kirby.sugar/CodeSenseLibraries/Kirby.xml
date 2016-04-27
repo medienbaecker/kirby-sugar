@@ -12,34 +12,11 @@
     <set name="com.medienbaecker.kirby.camera">
       <completion string="make" />
       <completion string="model" />
-      <completion string="toArray" />
     </set>
     
     <set name="com.medienbaecker.kirby.content">
-      <completion string="data" />
-      <completion string="exists" />
-      <completion string="fields" />
-      <completion string="get">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="has">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="language" />
-      <completion string="name" />
       <completion string="raw" />
-      <completion string="root" />
-      <completion string="toArray" />
     </set>
     
     <set name="com.medienbaecker.kirby.dimension">
@@ -47,13 +24,9 @@
       <completion string="fitHeight" />
       <completion string="fitWidth" />
       <completion string="fitWidthAndHeight" />
-      <completion string="height" />
       <completion string="landscape" />
-      <completion string="orientation" />
       <completion string="portrait" />
-      <completion string="ratio" />
       <completion string="square" />
-      <completion string="width" />
     </set>
     
     <set name="com.medienbaecker.kirby.exif">
@@ -66,8 +39,6 @@
       <completion string="isColor" />
       <completion string="iso" />
       <completion string="location" />
-      <completion string="timestamp" />
-      <completion string="toArray" />
     </set>
     
     <set name="com.medienbaecker.kirby.field">
@@ -105,7 +76,6 @@
 		    	</append-dynamic>
 		    </behavior>
 		  </completion>
-		  <completion string="pages" />
 		  <completion string="short">
 		    <behavior>
 		    	<append-dynamic>
@@ -144,14 +114,6 @@
         </behavior>
       </completion>
       <completion string="base64" />
-      <completion string="content">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="copy">
         <behavior>
         	<append-dynamic>
@@ -177,8 +139,6 @@
         </behavior>
       </completion>
       <completion string="dataUri" />
-      <completion string="date" />
-      <completion string="delete" />
       <completion string="dimensions" />
       <completion string="dir" />
       <completion string="download">
@@ -193,9 +153,6 @@
       <completion string="exists" />
       <completion string="extension" />
       <completion string="filename" />
-      <completion string="files" />
-      <completion string="hasNext" />
-      <completion string="hasPrev" />
       <completion string="hash" />
       <completion string="header">
         <behavior>
@@ -215,14 +172,11 @@
         </behavior>
       </completion>
       <completion string="imagesize" />        
-      <completion string="is" />
       <completion string="isExecutable" />
       <completion string="isLandscape" />
       <completion string="isPortrait" />
       <completion string="isReadable" />
       <completion string="isSquare" />
-      <completion string="isWritable" />
-      <completion string="kirby" />
       <completion string="load">
         <behavior>
         	<append-dynamic>
@@ -241,20 +195,8 @@
       </completion>
       <completion string="mime" />
       <completion string="modified" />
-      <completion string="move">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="name" />
-      <completion string="next" />
       <completion string="niceSize" />
       <completion string="orientation" />
-      <completion string="page" />
-      <completion string="prev" />
       <completion string="ratio" />
       <completion string="read">
         <behavior>
@@ -273,7 +215,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="reset" />
       <completion string="resize">
         <behavior>
         	<append-dynamic>
@@ -294,22 +235,8 @@
       </completion>
       <completion string="show" />
       <completion string="siblings" />
-      <completion string="site" />
       <completion string="size" />
-      <completion string="textfile" />
-      <completion string="toArray" />
-      <completion string="toJson" />
-      <completion string="touch" />
       <completion string="type" />
-      <completion string="update">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="url" />
       <completion string="width" />
       <completion string="write">
         <behavior>
@@ -322,50 +249,7 @@
     </set>
     
     <set name="com.medienbaecker.kirby.files">
-      <completion string="count" />
       <completion string="filter">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="filterBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="find">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="findBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="first" />
-      <completion string="flip" />
-      <completion string="get">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="groupBy">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -375,24 +259,7 @@
       </completion>
       <completion string="keys" />
       <completion string="last" />
-      <completion string="limit">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="map" />
       <completion string="not">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="nth">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -408,32 +275,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="paginate">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="pagination" />
-      <completion string="pluck">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="shuffle" />
-      <completion string="slice">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="sortBy">
         <behavior>
         	<append-dynamic>
@@ -442,17 +283,12 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="toArray" />
-      <completion string="toJson" />
     </set>
     
     <set name="com.medienbaecker.kirby.language">
-      <completion string="code" />
       <completion string="default" />
       <completion string="direction" />
-      <completion string="locale" />
       <completion string="name" />
-      <completion string="url" />
     </set>
     
     <set name="com.medienbaecker.kirby.location">
@@ -462,27 +298,14 @@
     </set>
     
     <set name="com.medienbaecker.kirby.page">
-      <completion string="archives" />
       <completion string="audio" />
-      <completion string="children" />
       <completion string="code" />
       <completion string="content" />
-      <completion string="content" />
       <completion string="contentURL" />
-      <completion string="create">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="date" />
-      <completion string="delete" />
       <completion string="depth" />
       <completion string="dirname" />
       <completion string="diruri" />
-      <completion string="documents" />
       <completion string="equals">
         <behavior>
         	<append-dynamic>
@@ -493,16 +316,10 @@
       </completion>
       <completion string="file" />
       <completion string="files" />
-      <completion string="find" />
       <completion string="grandChildren" />
-      <completion string="hasArchives" />
       <completion string="hasAudio" />
-      <completion string="hasChildren" />
       <completion string="hasCode" />
-      <completion string="hasDocuments" />
       <completion string="hasFiles" />
-      <completion string="hasImages" />
-      <completion string="hasInvisibleChildren" />
       <completion string="hasNext" />
       <completion string="hasNextInvisible" />
       <completion string="hasNextVisible" />
@@ -510,9 +327,6 @@
       <completion string="hasPrevInvisible" />
       <completion string="hasPrevVisible" />
       <completion string="hasTemplate" />
-      <completion string="hasVideos" />
-      <completion string="hasVisibleChildren" />
-      <completion string="hash" />
       <completion string="headers" />
       <completion string="hide" />
       <completion string="id" />
@@ -524,7 +338,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="images" />
       <completion string="index" />
       <completion string="intendedTemplate" />
       <completion string="intendedTemplateFile" />
@@ -577,11 +390,8 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="isSite" />
       <completion string="isVisible" />
       <completion string="isWritable" />
-      <completion string="kirby" />
-      <completion string="modified" />
       <completion string="move">
         <behavior>
 		    	<append-dynamic>
@@ -590,7 +400,6 @@
 		    	</append-dynamic>
 		    </behavior>
       </completion>
-      <completion string="next" />
       <completion string="nextInvisible" />
       <completion string="nextVisible" />
       <completion string="num" />
@@ -599,8 +408,6 @@
       <completion string="prev" />
       <completion string="prevInvisible" />
       <completion string="prevVisible" />
-      <completion string="reset" />
-      <completion string="root" />
       <completion string="search">
         <behavior>
         	<append-dynamic>
@@ -609,7 +416,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="siblings" />
       <completion string="site" />
       <completion string="slug" />
       <completion string="sort">
@@ -626,8 +432,6 @@
       <completion string="textfile" />
       <completion string="tinyurl" />
       <completion string="title" />
-      <completion string="toArray" />
-      <completion string="toJson" />
       <completion string="touch" />
       <completion string="uid" />
       <completion string="update">
@@ -641,7 +445,6 @@
       <completion string="uri" />
       <completion string="url" />
       <completion string="urlKey" />
-      <completion string="videos" />
     </set>
     
     <set name="com.medienbaecker.kirby.pages">
@@ -653,26 +456,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="append">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="children" />
-      <completion string="count" />
-      <completion string="create">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="current" />
-      <completion string="files" />
       <completion string="filter">
         <behavior>
         	<append-dynamic>
@@ -697,14 +480,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="findBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="findByURI">
         <behavior>
         	<append-dynamic>
@@ -715,15 +490,6 @@
       </completion>
       <completion string="findOpen" />
       <completion string="first" />
-      <completion string="flip" />
-      <completion string="get">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="group">
         <behavior>
         	<append-dynamic>
@@ -732,23 +498,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="groupBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="has">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="index" />
       <completion string="indexOf">
         <behavior>
         	<append-dynamic>
@@ -767,8 +516,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="keys" />
-      <completion string="last" />
       <completion string="limit">
         <behavior>
         	<append-dynamic>
@@ -787,40 +534,7 @@
         </behavior>
       </completion>
       <completion string="next" />
-      <completion string="not">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="nth">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="offset">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="paginate">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="pagination" />
-      <completion string="pluck">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -836,16 +550,7 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="prev" />
       <completion string="rewind" />
-      <completion string="search">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="set">
         <behavior>
         	<append-dynamic>
@@ -855,23 +560,6 @@
         </behavior>
       </completion>
       <completion string="shuffle" />
-      <completion string="slice">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="sortBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="toArray" />
       <completion string="toJson" />
       <completion string="valid" />
       <completion string="visible" />
@@ -901,7 +589,6 @@
       <completion string="nextPageUrl" />
       <completion string="numEnd" />
       <completion string="numStart" />
-      <completion string="offset" />
       <completion string="page" />
       <completion string="pageUrl">
         <behavior>
@@ -924,23 +611,12 @@
       </completion>
       <completion string="rangeEnd" />
       <completion string="rangeStart" />
-      <completion string="toArray" />
     </set>
     
     <set name="com.medienbaecker.kirby.request">
       <completion string="ajax" />
       <completion string="body" />
       <completion string="cli" />
-      <completion string="data" />
-      <completion string="files" />
-      <completion string="get">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="has">
         <behavior>
         	<append-dynamic>
@@ -950,7 +626,6 @@
         </behavior>
       </completion>
       <completion string="ip" />
-      <completion string="is" />
       <completion string="method" />
       <completion string="params" />
       <completion string="path" />
@@ -959,63 +634,43 @@
       <completion string="scheme" />
       <completion string="secure" />
       <completion string="ssl" />
-      <completion string="url" />
     </set>
     
     <set name="com.medienbaecker.kirby.roots">
       <completion string="accounts" />
       <completion string="assets" />
-      <completion string="autocss" />
-      <completion string="autojs" />
       <completion string="avatars" />
       <completion string="blueprints" />
       <completion string="cache" />
       <completion string="config" />
-      <completion string="content" />
       <completion string="controllers" />
       <completion string="fields" />
-      <completion string="index" />
       <completion string="kirby" />
-      <completion string="languages" />
       <completion string="models" />
       <completion string="plugins" />
-      <completion string="site" />
       <completion string="snippets" />
       <completion string="tags" />
       <completion string="templates" />
-      <completion string="thumbs" />
       <completion string="widgets" />
     </set>
     
     <set name="com.medienbaecker.kirby.site">
       <completion string="activePage" />
       <completion string="archives" />
-      <completion string="audio" />
       <completion string="breadcrumb" />
       <completion string="children" />
-      <completion string="code" />
-      <completion string="content" />
-      <completion string="contentURL" />
       <completion string="defaultLanguage" />
       <completion string="detectedLanguage" />
-      <completion string="diruri" />
       <completion string="documents" />
       <completion string="errorPage" />
-      <completion string="grandChildren" />
       <completion string="hasArchives" />
-      <completion string="hasAudio" />
       <completion string="hasChildren" />
-      <completion string="hasCode" />
       <completion string="hasDocuments" />
-      <completion string="hasFiles" />
       <completion string="hasImages" />
       <completion string="hasInvisibleChildren" />
-      <completion string="hasVideos" />
       <completion string="hasVisibleChildren" />
       <completion string="homePage" />
-      <completion string="id" />
       <completion string="images" />
-      <completion string="index" />
       <completion string="isSite" />
       <completion string="language">
         <behavior>
@@ -1027,7 +682,6 @@
       </completion>
       <completion string="languages" />
       <completion string="locale" />
-      <completion string="modified" />
       <completion string="multilang" />
       <completion string="pages" />
       <completion string="reset" />
@@ -1041,15 +695,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="update">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="url" />
       <completion string="user" />
       <completion string="users" />
       <completion string="videos" />
@@ -1066,12 +711,8 @@
     </set>
     
     <set name="com.medienbaecker.kirby.urls">
-      <completion string="assets" />
       <completion string="autocss" />
       <completion string="autojs" />
-      <completion string="avatars" />
-      <completion string="content" />
-      <completion string="index" />
       <completion string="thumbs" />
     </set>
     
@@ -1079,10 +720,8 @@
       <completion string="avatar" />
       <completion string="avatarRoot" />
       <completion string="current" />
-      <completion string="data" />
       <completion string="delete" />
       <completion string="email" />
-      <completion string="exists" />
       <completion string="firstName" />
       <completion string="gravatar" />
       <completion string="hasPanelAccess" />
@@ -1095,14 +734,6 @@
         </behavior>
       </completion>
       <completion string="hasRole">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="is">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -1123,36 +754,12 @@
       </completion>
       <completion string="logout" />
       <completion string="role" />
-      <completion string="update">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="username" />
     </set>
     
     <set name="com.medienbaecker.kirby.users">
       <completion string="count" />
       <completion string="create">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="filter">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="filterBy">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -1168,15 +775,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="findBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="first" />
       <completion string="flip" />
       <completion string="get">
         <behavior>
@@ -1194,25 +792,7 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="keys" />
-      <completion string="last" />
-      <completion string="limit">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="map">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="not">
         <behavior>
         	<append-dynamic>
         	  <matched-suffix>(\()|[^(]</matched-suffix>
@@ -1236,14 +816,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="paginate">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
       <completion string="pagination" />
       <completion string="pluck">
         <behavior>
@@ -1253,7 +825,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="shuffle" />
       <completion string="slice">
         <behavior>
         	<append-dynamic>
@@ -1262,16 +833,6 @@
         	</append-dynamic>
         </behavior>
       </completion>
-      <completion string="sortBy">
-        <behavior>
-        	<append-dynamic>
-        	  <matched-suffix>(\()|[^(]</matched-suffix>
-        		<transform-into>(?1::(${1:}\))</transform-into>
-        	</append-dynamic>
-        </behavior>
-      </completion>
-      <completion string="toArray" />
-      <completion string="toJson" />
     </set>
     
 </codesense>
