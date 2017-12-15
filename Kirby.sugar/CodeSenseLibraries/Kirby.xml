@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+  <set name="kirby.snippets">
+        
+  <behavior>
+  	<append-dynamic>
+      <matched-suffix>.*</matched-suffix>
+      <transform-into>(?1::(\)</transform-into>
+    </append-dynamic>
+  </behavior>
+        
+  <!--
+  $camera:
+  -->
+    <completion string="make">
+    </completion>
+    <completion string="model">
+    </completion>
+    <completion string="toArray">
+    </completion>
+  <!--
+  $content:
+  -->
+    <completion string="data">
+    </completion>
+    <completion string="exists">
+    </completion>
+    <completion string="fields">
+    </completion>
+    <completion string="get">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$key}, ${2:\$arguments = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$key}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="language">
+    </completion>
+    <completion string="name">
+    </completion>
+    <completion string="raw">
+    </completion>
+    <completion string="root">
+    </completion>
+    <completion string="toArray">
+    </completion>
+  <!--
+  $dimension:
+  -->
+    <completion string="fit">
+    </completion>
+    <completion string="fitHeight">
+    </completion>
+    <completion string="fitWidth">
+    </completion>
+    <completion string="fitWidthAndHeight">
+    </completion>
+    <completion string="height">
+    </completion>
+    <completion string="landscape">
+    </completion>
+    <completion string="orientation">
+    </completion>
+    <completion string="portrait">
+    </completion>
+    <completion string="ratio">
+    </completion>
+    <completion string="square">
+    </completion>
+    <completion string="width">
+    </completion>
+  <!--
+  $exif:
+  -->
+    <completion string="aperture">
+    </completion>
+    <completion string="camera">
+    </completion>
+    <completion string="data">
+    </completion>
+    <completion string="exposure">
+    </completion>
+    <completion string="focalLength">
+    </completion>
+    <completion string="isBW">
+    </completion>
+    <completion string="isColor">
+    </completion>
+    <completion string="iso">
+    </completion>
+    <completion string="location">
+    </completion>
+    <completion string="timestamp">
+    </completion>
+    <completion string="toArray">
+    </completion>
+  <!--
+  Field methods:
+  -->
+    <completion string="bool">
+    </completion>
+    <completion string="empty">
+    </completion>
+    <completion string="escape">
+    </completion>
+    <completion string="excerpt">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$length = 140}, ${2:\$mode = 'chars'}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="exists">
+    </completion>
+    <completion string="float">
+    </completion>
+    <completion string="html">
+    </completion>
+    <completion string="int">
+    </completion>
+    <completion string="isEmpty">
+    </completion>
+    <completion string="isFalse">
+    </completion>
+    <completion string="isNotEmpty">
+    </completion>
+    <completion string="isTranslated">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$lang = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isTrue">
+    </completion>
+    <completion string="key">
+    </completion>
+    <completion string="kirbytext">
+    </completion>
+    <completion string="kt">
+    </completion>
+    <completion string="length">
+    </completion>
+    <completion string="link">
+    </completion>
+    <completion string="lower">
+    </completion>
+    <completion string="markdown">
+    </completion>
+    <completion string="or">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$alternative}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pages">
+    </completion>
+    <completion string="short">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$chars}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="smartypants">
+    </completion>
+    <completion string="split">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$separator = ','}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toFile">
+    </completion>
+    <completion string="toPage">
+    </completion>
+    <completion string="toStructure">
+    </completion>
+    <completion string="toUrl">
+    </completion>
+    <completion string="upper">
+    </completion>
+    <completion string="value">
+    </completion>
+    <completion string="widont">
+    </completion>
+    <completion string="words">
+    </completion>
+    <completion string="xml">
+    </completion>
+    <completion string="yaml">
+    </completion>
+  <!--
+  $file:
+  -->
+    <completion string="base64">
+    </completion>
+    <completion string="blur">
+    </completion>
+    <completion string="bw">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$bw}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="createNewFilename">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$name}, ${2:\$safeName = true}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="crop">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$width}, ${2:\$height = null}, ${3:\$quality = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="dataUri">
+    </completion>
+    <completion string="date">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$format = null}, ${2:\$field = 'date'}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="delete">
+    </completion>
+    <completion string="dimensions">
+    </completion>
+    <completion string="dir">
+    </completion>
+    <completion string="diruri">
+    </completion>
+    <completion string="download">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$filename = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="exif">
+    </completion>
+    <completion string="extension">
+    </completion>
+    <completion string="filename">
+    </completion>
+    <completion string="files">
+    </completion>
+    <completion string="hasNext">
+    </completion>
+    <completion string="hasPrev">
+    </completion>
+    <completion string="hash">
+    </completion>
+    <completion string="height">
+    </completion>
+    <completion string="isLandscape">
+    </completion>
+    <completion string="isPortrait">
+    </completion>
+    <completion string="isReadable">
+    </completion>
+    <completion string="isSquare">
+    </completion>
+    <completion string="isWebsafe">
+    </completion>
+    <completion string="isWritable">
+    </completion>
+    <completion string="kirby">
+    </completion>
+    <completion string="meta">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$language}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="mime">
+    </completion>
+    <completion string="modified">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$format = false}, ${2:\$handler = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="name">
+    </completion>
+    <completion string="next">
+    </completion>
+    <completion string="niceSize">
+    </completion>
+    <completion string="orientation">
+    </completion>
+    <completion string="original">
+    </completion>
+    <completion string="page">
+    </completion>
+    <completion string="prev">
+    </completion>
+    <completion string="ratio">
+    </completion>
+    <completion string="read">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$format = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="rename">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$name}, ${2:\$safeName = truel}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="resize">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$width}, ${2:\$height = null}, ${3:\$quality = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="root">
+    </completion>
+    <completion string="scale">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$by}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="siblings">
+    </completion>
+    <completion string="site">
+    </completion>
+    <completion string="size">
+    </completion>
+    <completion string="textfile">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$language}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="thumb">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$params}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toArray">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="type">
+    </completion>
+    <completion string="update">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$data = array(\)}, ${2:\$language}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="uri">
+    </completion>
+    <completion string="url">
+    </completion>
+    <completion string="width">
+    </completion>
+  <!--
+  $files:
+  -->
+    <completion string="count">
+    </completion>
+    <completion string="filter">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$callback}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="filterBy">
+      <behavior>
+      	<append-dynamic>
+          <transform-into>(?1::(${1:\$key}, ${2:\$operator}, ${3:\$value}, ${4:\$split}\)</transform-into>
+        </append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="find">
+    </completion>
+    <completion string="findBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$value}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="first">
+    </completion>
+    <completion string="flip">
+    </completion>
+    <completion string="get">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="groupBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$caseInsensitive = true}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$file}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="keys">
+    </completion>
+    <completion string="last">
+    </completion>
+    <completion string="limit">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="map">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="not">
+    </completion>
+    <completion string="nth">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$n}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="offset">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="paginate">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}, ${2:\$options = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pagination">
+    </completion>
+    <completion string="pluck">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$split = null}, ${3:\$unique = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="shuffle">
+    </completion>
+    <completion string="slice">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset = null}, ${2:\$limit = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="sortBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$direction = 'asc'}, ${3:\$method = SORT_REGULAR)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toArray">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toJson">
+    </completion>
+  <!--
+  Helpers:
+  -->
+    <completion string="css">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$path}, ${2:\$media = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="email">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$params}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="excerpt">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$text}, ${2:\$length = 140}, ${3:\$mode = 'chars'}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="gist">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$url}, ${2:\$file = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="image">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="js">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$path}, ${2:\$async = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="kirby">
+    </completion>
+    <completion string="kirbytag">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$attr}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="kirbytext">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$text}, ${2:\$page = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="markdown">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$text}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="page">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pages">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="site">
+    </completion>
+    <completion string="smartypants">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$text}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="snippet">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$file}, ${2:\$data = array(\)}, ${3:\$return = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="structure">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data}, ${2:\$page = null}, ${3:\$key = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="textfile">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri}, ${2:\$template}, ${3:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="thisUrl">
+    </completion>
+    <completion string="thumb">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$image}, ${2:\$params = array(\)}, ${3:\$obj = true}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="twitter">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$username}, ${2:\$text = null}, ${3:\$title = null}, ${4:\$class = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="vimeo">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$url}, ${2:\$width = null}, ${3:\$height = null}, ${4:\$class = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="youtube">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$url}, ${2:\$width = null}, ${3:\$height = null}, ${4:\$class = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+  <!--
+  $language:
+  -->
+    <completion string="code">
+    </completion>
+    <completion string="default">
+    </completion>
+    <completion string="direction">
+    </completion>
+    <completion string="host">
+    </completion>
+    <completion string="locale">
+    </completion>
+    <completion string="name">
+    </completion>
+    <completion string="path">
+    </completion>
+    <completion string="url">
+    </completion>
+  <!--
+  $location:
+  -->
+    <completion string="lat">
+    </completion>
+    <completion string="lng">
+    </completion>
+    <completion string="toArray">
+    </completion>
+  <!--
+  $page:
+  -->
+    <completion string="archives">
+    </completion>
+    <completion string="audio">
+    </completion>
+    <completion string="children">
+    </completion>
+    <completion string="code">
+    </completion>
+    <completion string="content">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="contentURL">
+    </completion>
+    <completion string="create">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri}, ${2:\$template}, ${3:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="date">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$format = null}, ${2:\$field = 'date'}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="decrement">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$by = 1}, ${3:\$max = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="delete">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$force = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="depth">
+    </completion>
+    <completion string="dirname">
+    </completion>
+    <completion string="diruri">
+    </completion>
+    <completion string="document">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="documents">
+    </completion>
+    <completion string="equals">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$other}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="file">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="files">
+    </completion>
+    <completion string="find">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="grandChildren">
+    </completion>
+    <completion string="hasArchives">
+    </completion>
+    <completion string="hasAudio">
+    </completion>
+    <completion string="hasChildren">
+    </completion>
+    <completion string="hasCode">
+    </completion>
+    <completion string="hasDocuments">
+    </completion>
+    <completion string="hasFiles">
+    </completion>
+    <completion string="hasImages">
+    </completion>
+    <completion string="hasInvisibleChildren">
+    </completion>
+    <completion string="hasNext">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasNextInvisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasNextVisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasPrev">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasPrevInvisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasPrevVisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasTemplate">
+    </completion>
+    <completion string="hasVideos">
+    </completion>
+    <completion string="hasVisibleChildren">
+    </completion>
+    <completion string="hash">
+    </completion>
+    <completion string="headers">
+    </completion>
+    <completion string="hide">
+    </completion>
+    <completion string="id">
+    </completion>
+    <completion string="image">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="images">
+    </completion>
+    <completion string="increment">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$by = 1}, ${3:\$max = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="index">
+    </completion>
+    <completion string="intendedTemplate">
+    </completion>
+    <completion string="intendedTemplateFile">
+    </completion>
+    <completion string="inventory">
+    </completion>
+    <completion string="is">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$other}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isActive">
+    </completion>
+    <completion string="isAncestorOf">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$child}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isCacheable">
+    </completion>
+    <completion string="isChildOf">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$parent}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isDeletable">
+    </completion>
+    <completion string="isDescendantOf">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$parent}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isDescendantOfActive">
+    </completion>
+    <completion string="isErrorPage">
+    </completion>
+    <completion string="isHomePage">
+    </completion>
+    <completion string="isInvisible">
+    </completion>
+    <completion string="isOpen">
+    </completion>
+    <completion string="isParentOf">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$child}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isSite">
+    </completion>
+    <completion string="isVisible">
+    </completion>
+    <completion string="isWritable">
+    </completion>
+    <completion string="kirby">
+    </completion>
+    <completion string="modified">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$format = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="move">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uid}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="next">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="nextInvisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="nextVisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="num">
+    </completion>
+    <completion string="parent">
+    </completion>
+    <completion string="parents">
+    </completion>
+    <completion string="prev">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="prevInvisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="prevVisible">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$sort}, ${2:\$direction}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="reset">
+    </completion>
+    <completion string="root">
+    </completion>
+    <completion string="search">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$query}, ${2:\$params = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="siblings">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$self = true}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="site">
+    </completion>
+    <completion string="slug">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="sort">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$num = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="template">
+    </completion>
+    <completion string="templateData">
+    </completion>
+    <completion string="templateFile">
+    </completion>
+    <completion string="textfile">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$template = null}, ${2:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="tinyurl">
+    </completion>
+    <completion string="title">
+    </completion>
+    <completion string="toArray">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toJson">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="touch">
+    </completion>
+    <completion string="uid">
+    </completion>
+    <completion string="update">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data = array(\)}, ${2:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="uri">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="url">
+    </completion>
+    <completion string="urlKey">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$lang = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="video">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="videos">
+    </completion>
+  <!--
+  $pages:
+  -->
+    <completion string="add">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$page}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="append">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$object}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="children">
+    </completion>
+    <completion string="count">
+    </completion>
+    <completion string="create">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uid}, ${2:\$template}, ${3:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="files">
+    </completion>
+    <completion string="filter">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="filterBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$operator}, ${3:\$value}, ${4:\$split}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="find">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$page}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="findBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$value}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="findByURI">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="findOpen">
+    </completion>
+    <completion string="first">
+    </completion>
+    <completion string="flip">
+    </completion>
+    <completion string="get">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$default = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="groupBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$caseInsensitive = true}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$page}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="index">
+    </completion>
+    <completion string="invisible">
+    </completion>
+    <completion string="keys">
+    </completion>
+    <completion string="last">
+    </completion>
+    <completion string="limit">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="map">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="merge">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$collection2}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="not">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$args}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="nth">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$n}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="offset">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="paginate">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}, ${2:\$options = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pagination">
+    </completion>
+    <completion string="pluck">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$split = null}, ${3:\$unique = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="prepend">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$object}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="search">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$query}, ${2:\$params = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="shuffle">
+    </completion>
+    <completion string="slice">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset = null}, ${2:\$limit = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="sortBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$direction = 'asc'}, ${3:\$method = SORT_REGULAR}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toArray">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toJson">
+    </completion>
+    <completion string="visible">
+    </completion>
+  <!--
+  $pagination:
+  -->
+    <completion string="firstPage">
+    </completion>
+    <completion string="firstPageUrl">
+    </completion>
+    <completion string="hasNextPage">
+    </completion>
+    <completion string="hasPages">
+    </completion>
+    <completion string="hasPrevPage">
+    </completion>
+    <completion string="isFirstPage">
+    </completion>
+    <completion string="isLastPage">
+    </completion>
+    <completion string="items">
+    </completion>
+    <completion string="lastPage">
+    </completion>
+    <completion string="lastPageUrl">
+    </completion>
+    <completion string="limit">
+    </completion>
+    <completion string="nextPage">
+    </completion>
+    <completion string="nextPageUrl">
+    </completion>
+    <completion string="numEnd">
+    </completion>
+    <completion string="numStart">
+    </completion>
+    <completion string="offset">
+    </completion>
+    <completion string="page">
+    </completion>
+    <completion string="pageUrl">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$page}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pages">
+    </completion>
+    <completion string="prevPage">
+    </completion>
+    <completion string="prevPageUrl">
+    </completion>
+    <completion string="range">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$range=5}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="rangeEnd">
+    </completion>
+    <completion string="rangeStart">
+    </completion>
+    <completion string="toArray">
+    </completion>
+  <!--
+  $request:
+  -->
+    <completion string="ajax">
+    </completion>
+    <completion string="body">
+    </completion>
+    <completion string="cli">
+    </completion>
+    <completion string="data">
+    </completion>
+    <completion string="files">
+    </completion>
+    <completion string="get">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}, ${2:\$default = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$key}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="ip">
+    </completion>
+    <completion string="is">
+    </completion>
+    <completion string="method">
+    </completion>
+    <completion string="params">
+    </completion>
+    <completion string="path">
+    </completion>
+    <completion string="query">
+    </completion>
+    <completion string="referer">
+    </completion>
+    <completion string="scheme">
+    </completion>
+    <completion string="secure">
+    </completion>
+    <completion string="ssl">
+    </completion>
+    <completion string="url">
+    </completion>
+  <!--
+  $roots:
+  -->
+    <completion string="accounts">
+    </completion>
+    <completion string="assets">
+    </completion>
+    <completion string="autocss">
+    </completion>
+    <completion string="autojs">
+    </completion>
+    <completion string="avatars">
+    </completion>
+    <completion string="blueprints">
+    </completion>
+    <completion string="cache">
+    </completion>
+    <completion string="config">
+    </completion>
+    <completion string="content">
+    </completion>
+    <completion string="controllers">
+    </completion>
+    <completion string="fields">
+    </completion>
+    <completion string="index">
+    </completion>
+    <completion string="kirby">
+    </completion>
+    <completion string="languages">
+    </completion>
+    <completion string="models">
+    </completion>
+    <completion string="plugins">
+    </completion>
+    <completion string="roles">
+    </completion>
+    <completion string="site">
+    </completion>
+    <completion string="snippets">
+    </completion>
+    <completion string="tags">
+    </completion>
+    <completion string="templates">
+    </completion>
+    <completion string="thumbs">
+    </completion>
+    <completion string="widgets">
+    </completion>
+  <!--
+  $site:
+  -->
+    <completion string="activePage">
+    </completion>
+    <completion string="archives">
+    </completion>
+    <completion string="audio">
+    </completion>
+    <completion string="breadcrumb">
+    </completion>
+    <completion string="children">
+    </completion>
+    <completion string="code">
+    </completion>
+    <completion string="content">
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="contentURL">
+    </completion>
+    <completion string="defaultLanguage">
+    </completion>
+    <completion string="detectedLanguage">
+    </completion>
+    <completion string="diruri">
+    </completion>
+    <completion string="documents">
+    </completion>
+    <completion string="errorPage">
+    </completion>
+    <completion string="file">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="files">
+    </completion>
+    <completion string="find">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="grandChildren">
+    </completion>
+    <completion string="hasArchives">
+    </completion>
+    <completion string="hasAudio">
+    </completion>
+    <completion string="hasChildren">
+    </completion>
+    <completion string="hasCode">
+    </completion>
+    <completion string="hasDocuments">
+    </completion>
+    <completion string="hasFiles">
+    </completion>
+    <completion string="hasImages">
+    </completion>
+    <completion string="hasInvisibleChildren">
+    </completion>
+    <completion string="hasVideos">
+    </completion>
+    <completion string="hasVisibleChildren">
+    </completion>
+    <completion string="homePage">
+    </completion>
+    <completion string="id">
+    </completion>
+    <completion string="image">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$filename = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="images">
+    </completion>
+    <completion string="index">
+    </completion>
+    <completion string="isSite">
+    </completion>
+    <completion string="language">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$code = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="languages">
+    </completion>
+    <completion string="locale">
+    </completion>
+    <completion string="modified">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$format = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="multilang">
+    </completion>
+    <completion string="page">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pages">
+    </completion>
+    <completion string="reset">
+    </completion>
+    <completion string="roles">
+    </completion>
+    <completion string="search">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$query}, ${2:\$params = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="sessionLanguage">
+    </completion>
+    <completion string="switchLanguage">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$language}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="update">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="url">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$lang=false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="user">
+    </completion>
+    <completion string="users">
+    </completion>
+    <completion string="videos">
+    </completion>
+    <completion string="visit">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$uri = ''}, ${2:\$lang}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="visitorLanguage">
+    </completion>
+    <completion string="wasModifiedAfter">
+    </completion>
+  <!--
+  $urls:
+  -->
+    <completion string="assets">
+    </completion>
+    <completion string="autocss">
+    </completion>
+    <completion string="autojs">
+    </completion>
+    <completion string="avatars">
+    </completion>
+    <completion string="content">
+    </completion>
+    <completion string="index">
+    </completion>
+    <completion string="thumbs">
+    </completion>
+  <!--
+  $user:
+  -->
+    <completion string="avatar">
+    </completion>
+    <completion string="avatarRoot">
+    </completion>
+    <completion string="can">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$event}, ${2:\$args = []}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="cannot">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$event}, ${2:\$args = []}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="current">
+    </completion>
+    <completion string="data">
+    </completion>
+    <completion string="delete">
+    </completion>
+    <completion string="email">
+    </completion>
+    <completion string="exists">
+    </completion>
+    <completion string="firstName">
+    </completion>
+    <completion string="gravatar">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$size = 256}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="hasPanelAccess">
+    </completion>
+    <completion string="hasRole">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$role}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="is">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$someone}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="isAdmin">
+    </completion>
+    <completion string="isCurrent">
+    </completion>
+    <completion string="lastName">
+    </completion>
+    <completion string="login">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$password}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="logout">
+    </completion>
+    <completion string="permission">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$event}, ${2:\$args = []}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="role">
+    </completion>
+    <completion string="textfile">
+    </completion>
+    <completion string="update">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="username">
+    </completion>
+  <!--
+  $users:
+  -->
+    <completion string="count">
+    </completion>
+    <completion string="create">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$data = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="filter">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="filterBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$value}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="find">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$username}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="findBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$value}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="first">
+    </completion>
+    <completion string="flip">
+    </completion>
+    <completion string="get">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$username}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="groupBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$caseInsensitive = true}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="has">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$user}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="keys">
+    </completion>
+    <completion string="last">
+    </completion>
+    <completion string="limit">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="map">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="not">
+    </completion>
+    <completion string="nth">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$n}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="offset">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="paginate">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$limit}, ${2:\$options = array(\)}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="pagination">
+    </completion>
+    <completion string="pluck">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$split = null}, ${3:\$unique = false}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="shuffle">
+    </completion>
+    <completion string="slice">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$offset = null}, ${2:\$limit = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="sortBy">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$field}, ${2:\$direction = 'desc'}, ${3:\$method = SORT_REGULAR}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toArray">
+      <behavior>
+      	<append-dynamic>
+      		<transform-into>(?1::(${1:\$callback = null}\)</transform-into>
+      	</append-dynamic>
+      </behavior>
+    </completion>
+    <completion string="toJson">
+    </completion>
+
+    
+  </set>
+    
+</codesense>

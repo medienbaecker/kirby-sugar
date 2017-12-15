@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense>
+	<provider>
+		<!-- The selector when this provider is active -->
+		<selector>php, php *</selector>
+
+		<!-- complete-match determines what characters are required for this provider -->
+		<complete-match>\b[a-zA-Z]*</complete-match>
+
+		<!-- completions use the set names you defined in your libraries -->
+		<completions>kirby.snippets</completions>
+	</provider>
+</codesense>
